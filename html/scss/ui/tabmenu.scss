@@ -1,0 +1,46 @@
+@charset 'UTF-8' ;
+
+.tab{
+	position: relative;
+	width:100%;
+	font-size:12px;
+	line-height: 1.5;
+	&-btns{
+		display: flex;
+		position: relative;
+		z-index:10;
+		&.full{
+			> a {
+				flex:1;
+			}
+		}
+		> a {
+			position: relative;
+			display:block;
+			padding:10px 20px;
+			border:1px solid #333;
+			background-color: #eee;
+			color:#333;
+			&:not(:last-child){
+				border-right: 0 ;
+			}
+			&.active{
+				border-bottom-color:#fff;
+				background-color: #fff;
+				font-weight: 600;
+			}
+		}
+	}
+	&-contents {
+		position: relative;
+		top:-1px;
+		border-top:1px solid #333;
+		> section{
+			width:0; height:0; overflow:hidden;
+			&.active{
+				padding:1em;
+				width:auto; height:auto; overflow:visible;
+			}
+		}
+	}
+} // end of khTabWrap

@@ -1,0 +1,21 @@
+@charset 'UTF-8' ;
+@import './ui/layout';
+@import './ui/tabmenu';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+html, body{
+	height : 100%;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%; height:100%;
+	flex-direction: column;
+}
+
+// https://www.jqueryscript.net/accordion/Responsive-Multipurpose-Tabs-Accordion-Plugin-With-jQuery.html
